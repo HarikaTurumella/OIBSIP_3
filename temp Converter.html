@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body class="head">  
+  <div class="header">
+    <h1>TEMPERATURE CONVERTER</h1>
+  </div>
+
+    <div class="wrapper">
+  <!--p>Enter a value in the Fahrenheit field to convert the value to Celsius and Kelvin:</p-->
+  <div class="cont1">
+  
+    <form id="rad">
+      <p><b>Enter value:</b>
+
+        <input id="num1" type="number" placeholder="Enter Input" name="txt1"> 
+        <br><br>
+     <label><b>Select units:</b></label><br><br>
+    <input id="c_f"  type="radio" name="unit"  value="r1"   onclick="temperatureConverter(this.value)" >
+    Celcius to Fahrenheit   
+  </p>
+  <input id="c_k" type="radio" name="unit"  value="r2" onclick="temperatureConverter(this.value)" >
+  Celcius to Kelvin
+</p>
+  <input id="f_k" type="radio" name="unit" value="r3" onclick="temperatureConverter(this.value)" >
+  Fahrenheit to Kelvin  
+</p>
+<input id="f_c" type="radio" name="unit" value="r4" onclick="temperatureConverter(this.value)" >
+  Fahrenheit to Celcius  
+</p>
+<input id="k_c" type="radio" name="unit" value="r5" onclick="temperatureConverter(this.value)">
+Kelvin to Celcius  
+</p>
+<input id="k_f" type="radio" name="unit" value="r6" onclick="temperatureConverter(this.value)">
+Kelvin to Fahrenheit  
+</p>
+
+<label for="Result" ><b>Result: </b> <span id="myInput"></span> </label><br><br>
+
+   <button type="reset">Reset</button></p>
+ 
+
+  </form>
+  </div>
+  </div>
+  <script src="script1.js"></script>
+  </body>
+  </html>
